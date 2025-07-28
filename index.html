@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulasi FSA (Finite State Automaton)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>FSA OUTPUT FASH WASH</h1>
+
+        <div>
+            <img class="main-image" src="images/Screenshot_2025-07-29_00-47-42.png" alt="">
+        </div>
+
+        <div class="input-section">
+            <label for="decimalInput">Masukkan Angka Desimal:</label>
+            <input type="number" id="decimalInput" placeholder="Contoh: 13" min="0">
+            <button onclick="processInput()">Proses Input</button>
+        </div>
+
+        <dialog id="resultDialog">
+            <p>Input Desimal: <span id="decimalOutput"></span></p>
+            <p>Konversi Biner: <span id="binaryOutput"></span></p>
+            <p>State Berhenti: <span id="finalState"></span></p>
+            <div class="result-image-container">
+                <img id="resultStateImage" src="" alt="Gambar State Hasil" class="main-image">
+            </div>
+            <button id="closeDialog">Tutup</button>
+        </dialog>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
