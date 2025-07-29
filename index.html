@@ -15,12 +15,37 @@
         </div>
 
         <div class="input-section">
-            <label for="decimalInput">Masukkan Angka Desimal:</label>
-            <input type="number" id="decimalInput" placeholder="Contoh: 13" min="0">
-            <label for="binaryInput">Masukkan Angka Biner:</label>
-            <input type="text" id="binaryInput" placeholder="Contoh: 101101">
+            <div class="input-type-selection" style="text-align: left;">
+                <input type="radio" id="decimalRadio" name="inputType" value="decimal" onclick="showInput('decimal')" checked>
+                <label for="decimalRadio">Desimal</label>
+                <input type="radio" id="binaryRadio" name="inputType" value="binary" onclick="showInput('binary')">
+                <label for="binaryRadio">Biner</label>
+            </div>
+
+            <div id="decimalInputSection" class="input-field">
+                <label for="decimalInput">Masukkan Angka Desimal:</label>
+                <input type="number" id="decimalInput" placeholder="Contoh: 13" min="0">
+            </div>
+
+            <div id="binaryInputSection" class="input-field" style="display: none;">
+                <label for="binaryInput">Masukkan Angka Biner:</label>
+                <input type="text" id="binaryInput" placeholder="Contoh: 101101">
+            </div>
+
             <button onclick="processInput()">Proses Input</button>
         </div>
+
+        <script>
+            function showInput(inputType) {
+                if (inputType === 'decimal') {
+                    document.getElementById('decimalInputSection').style.display = 'block';
+                    document.getElementById('binaryInputSection').style.display = 'none';
+                } else {
+                    document.getElementById('decimalInputSection').style.display = 'none';
+                    document.getElementById('binaryInputSection').style.display = 'block';
+                }
+            }
+        </script>
 
         <dialog id="resultDialog">
             <p>Input Desimal: <span id="decimalOutput"></span></p>
