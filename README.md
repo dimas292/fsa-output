@@ -1,3 +1,7 @@
+# Simulasi FSA dengan Electron
+
+Program ini adalah aplikasi simulasi Finite State Automaton (FSA) yang berjalan di platform desktop. Aplikasi ini dibuat menggunakan Electron.
+
 # Cara Menjalankan Program
 
 Program ini adalah aplikasi Electron sederhana. Untuk menjalankannya, ikuti langkah-langkah berikut:

@@ -39,7 +39,7 @@ const fsaTransitions = {
 // Map states to their corresponding image URLs
 const stateImages = {
     'A1': 'images/states/A1.jpg', // Pink
-    'A2': 'images/states/A2.jpg', // SteelBlue
+    'A2': 'images/states/A2.png', // SteelBlue
     'A3': 'images/states/A3.jpg', // Orchid
     'A4': 'images/states/A4.jpg'  // LimeGreen
 };
